@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f127a;
+}
+
+.container{
+    width: 22rem;
+    margin-top: 8rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.inputs input{
+    outline: none;
+    height: 3opx;
+}
+
+#results{
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+}
+
+.calcBtn{
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .app-body-content{
+        grid-template-columns: 1fr 3fr;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .tab-head-single{
+        margin: 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .app-body-content-list .name{
+        text-align: center;
+        margin-top: 1.8rem;
+    }
+    .app-body-content{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        max-width: 680px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .app-body-content-thumbnail{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .app-header{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .app-header-search{
+        margin-top: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .app-body-tabs-head{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .app-header-search{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .app-header-search .form-control{
+        min-width: auto;
+        color: #fff;
+    }
+    .app-header-search .search-btn{
+        padding-left: 2rem;
+    }
+    .app-body-tabs-body{
+        margin-right: 3rem;
+    }
+}
+
+/* show-tab */
+.show-tab{
+    display: block;
+}
